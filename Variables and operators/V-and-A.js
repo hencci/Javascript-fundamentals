@@ -18,3 +18,6 @@ console.log(age); // what will be output now?
 
 // Re-assigning is cool and all, but what if we don’t want it to happen? We can accomplish this using the 'const' keyword.
 const pi = 3.14;
+
+// Add 2 numbers together!
+console.log(23 + 97);
