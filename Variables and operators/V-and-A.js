@@ -21,3 +21,6 @@ const pi = 3.14;
 
 // Add 2 numbers together!
 console.log(23 + 97);
+
+// Add a sequence of 6 different numbers together.
+console.log(5 + 5 + 5 + 5 + 5 + 5);
