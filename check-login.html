@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Ask for login
+        let username = prompt("Enter username:");
+        //Ask for password if visitor enters "Admin"
+        if (username == "Admin") {
+            const password = prompt("enter your password");
+            //Check password input
+            if (password == "TheMaster") {
+                alert("Welcome");
+            }
+            else if (password == " " || password == null) {
+                alert("Canceled");
+            }
+            else {
+                alert("Wrong password");
+            }
+        }
+        //Check if visitor entered a value
+        else if (username == " " || username == null) {
+            alert("canceled");
+        }
+        else {
+            alert("I don't know you");
+        }
+    </script>
+</body>
+</html>
