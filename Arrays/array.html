@@ -11,12 +11,17 @@
     <h2>Bracket indexing</h2>
     <p>JavaScript array elements are accessed using numeric indexes (starting from 0).</p>
     <p id="demo1"></p>
+    <h2>Changing an Array Element</h2>
+    <p id="demo2"></p>
 
     <script>
         /*An array is a special variable, which can hold more than one value:*/
         const cars = ["Saab", "Volvo", "BMW"];
         document.querySelector("#demo").innerHTML = cars;
         document.querySelector("#demo1").innerHTML = cars[0];
+
+        cars[0] = "Mercedes"; //This statement changes the value of the first element in cars
+        document.querySelector("#demo2").innerHTML = cars;
 
     
     </script>
