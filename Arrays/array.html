@@ -28,9 +28,12 @@
         let fLen = fruits.length;
         let text = "<ul>";
 
-        for (let i = 0; i < fLen; i++) {
-            text += `<li> ${fruits[i]}`;
-        }
+        // for (let i = 0; i < fLen; i++) {
+        //     text += `<li> ${fruits[i]}`;
+        // }
+        fruits.forEach(fruit => {
+            text += `<li> ${fruit}`
+        })
         text += "</ul>";
         document.getElementById("demo3").innerHTML = text;
     
