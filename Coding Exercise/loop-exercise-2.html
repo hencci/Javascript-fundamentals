@@ -19,7 +19,12 @@
         refused.textContent = 'Refuse: '
 
         for (person of people) {
-            
+            if (person ==="Phil" || person === "Lola") {
+                refused.textContent += `${person}, `
+            }
+            else {
+                admitted.textContent += `${person}, `;
+            }
         }
     </script>
 </body>
