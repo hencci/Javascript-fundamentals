@@ -9,5 +9,24 @@
     <h2>Live output</h2>
     <div class="output" style="height: 410px;overflow: auto;"></div>
 
+    <script>
+        const output = document.querySelector(".output");
+        output.textContent = "";
+
+        let i = 10;
+        while (i > 0) {
+            const para = document.createElement("p");
+            if (i === 10) {
+                para.textContent = "Countdown 10";
+            }
+            else if (i === 0) {
+                para.textContent = "Blast off!";
+            }
+            else {
+                para.textContent = i;
+            }
+            i--;
+        }
+    </script>
 </body>
 </html>
