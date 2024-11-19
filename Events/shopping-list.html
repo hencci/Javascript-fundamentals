@@ -47,6 +47,10 @@
             listItem.appendChild(listContent);
             listItem.appendChild(deleteButton);
             list.appendChild(listItem);
+
+            deleteButton.addEventListener("click", () => {
+                list.removeChild(listItem);
+            })
         })
     </script>
 </body>
