@@ -44,7 +44,9 @@
 
             listContent.textContent = item;
             deleteButton.textContent = "Delete item";
-            
+            listItem.appendChild(listContent);
+            listItem.appendChild(deleteButton);
+            list.appendChild(listItem);
         })
     </script>
 </body>
